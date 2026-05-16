@@ -291,7 +291,7 @@ export default function HomePage() {
             )}
 
             <button
-              onClick={() => document.getElementById('pro')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => { window.location.href = 'mailto:lmuhizinova@gmail.com?subject=ZenSudoku Pro — Subscription Interest&body=Hi! I would like to subscribe to ZenSudoku Pro. Please send me more details.' }}
               onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255,110,180,.18)'; e.currentTarget.style.borderColor = 'rgba(255,110,180,.35)' }}
               onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.1)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.22)' }}
               style={{ fontSize: 12, color: 'rgba(255,255,255,0.9)', padding: '7px 18px', borderRadius: 100, background: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)', border: '1px solid rgba(255,255,255,0.22)', cursor: 'pointer', fontFamily: 'var(--font-dm)', letterSpacing: '0.06em', transition: 'background .2s, border-color .2s' }}
@@ -717,7 +717,7 @@ export default function HomePage() {
               <span style={{ fontFamily: 'var(--font-playfair)', fontSize: 26, color: '#fff' }}>99</span>
             </div>
             <div style={{ fontSize: 12, color: 'rgba(255,255,255,.48)', fontFamily: 'var(--font-dm)', marginBottom: 28 }}>{t('pro_per_month')}</div>
-            <button style={{ width: '100%', padding: '13px 0', borderRadius: 100, background: 'rgba(255,255,255,.92)', color: '#111', fontSize: 13, border: 'none', cursor: 'pointer', fontFamily: 'var(--font-dm)', marginBottom: 12 }}>
+            <button onClick={() => { window.location.href = 'mailto:lmuhizinova@gmail.com?subject=ZenSudoku Pro — Subscription Interest&body=Hi! I would like to subscribe to ZenSudoku Pro. Please send me more details.' }} style={{ width: '100%', padding: '13px 0', borderRadius: 100, background: 'rgba(255,255,255,.92)', color: '#111', fontSize: 13, border: 'none', cursor: 'pointer', fontFamily: 'var(--font-dm)', marginBottom: 12 }}>
               {t('pro_trial')}
             </button>
             <div style={{ fontSize: 10, color: 'rgba(255,255,255,.38)', textAlign: 'center', fontFamily: 'var(--font-dm)', marginBottom: 20 }}>

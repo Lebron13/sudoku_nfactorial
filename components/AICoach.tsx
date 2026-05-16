@@ -338,6 +338,7 @@ export function AICoach({ board, solution, difficulty: _difficulty, selected }: 
             {/* Footer */}
             <div style={{ padding: '0 20px 14px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <span
+                onClick={hasReachedLimit ? () => { window.location.href = 'mailto:lmuhizinova@gmail.com?subject=ZenSudoku Pro — Subscription Interest&body=Hi! I would like to subscribe to ZenSudoku Pro. Please send me more details.' } : undefined}
                 style={{
                   fontSize: 10,
                   letterSpacing: '0.04em',

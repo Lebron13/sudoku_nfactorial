@@ -722,7 +722,10 @@ export default function DailyPage() {
         } as React.CSSProperties}>
           <div style={{ padding: '16px 20px 12px', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
             <div style={{ fontSize: 14, color: 'rgba(255,255,255,0.9)', fontWeight: 400 }}>AI Coach</div>
-            <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.3)', marginTop: 2 }}>
+            <div
+              onClick={queriesLeft === 0 ? () => { window.location.href = 'mailto:lmuhizinova@gmail.com?subject=ZenSudoku Pro — Subscription Interest&body=Hi! I would like to subscribe to ZenSudoku Pro. Please send me more details.' } : undefined}
+              style={{ fontSize: 10, color: 'rgba(255,255,255,0.3)', marginTop: 2, cursor: queriesLeft === 0 ? 'pointer' : 'default' }}
+            >
               {queriesLeft > 0 ? `${queriesLeft} free ${queriesLeft === 1 ? 'query' : 'queries'} per game` : 'Upgrade for unlimited →'}
             </div>
           </div>
