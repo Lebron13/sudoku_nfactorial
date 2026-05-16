@@ -447,6 +447,7 @@ export default function DailyPage() {
               return (
                 <div
                   key={`${r}-${c}`}
+                  data-mosaic-cell
                   className="number-cell"
                   onClick={() => handleCellClick(r, c)}
                   style={{
