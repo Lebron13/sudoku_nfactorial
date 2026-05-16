@@ -214,7 +214,7 @@ export function GameView({ difficulty: difficultyParam }: Props) {
       />
 
       {/* ── HEADER ────────────────────────────────────────────────────────── */}
-      <header style={{
+      <header data-game-header style={{
         height: 64,
         padding: '0 32px',
         display: 'flex',

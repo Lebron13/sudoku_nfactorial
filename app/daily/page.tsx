@@ -542,6 +542,7 @@ export default function DailyPage() {
             </div>
 
             <div
+              data-daily-preview
               onMouseEnter={() => setPreviewHovered(true)}
               onMouseLeave={() => setPreviewHovered(false)}
               style={{
