@@ -417,13 +417,12 @@ html[data-senior="true"] button { font-size: 16px !important; padding: 12px 22px
 ───────────────────────────────────── */
 
 html[data-theme="light"] {
-  filter: invert(0.92) hue-rotate(180deg) sepia(0.08) brightness(0.97);
-  background: #f0ece4;
+  filter: invert(0.88) hue-rotate(180deg) sepia(0.12) brightness(0.92);
+  background: #e8e2d6;
 }
 
-/* Counter-invert media so they look normal */
+/* Counter-invert media so they look normal — video handled separately */
 html[data-theme="light"] img,
-html[data-theme="light"] video,
 html[data-theme="light"] svg,
 html[data-theme="light"] picture,
 html[data-theme="light"] iframe,
@@ -431,7 +430,13 @@ html[data-theme="light"] canvas,
 html[data-theme="light"] [data-no-invert],
 html[data-theme="light"] [data-no-invert] *,
 html[data-theme="light"] [data-mosaic-cell] {
-  filter: invert(0.92) hue-rotate(180deg) sepia(0.08) brightness(0.97);
+  filter: invert(0.88) hue-rotate(180deg) sepia(0.12) brightness(0.92);
+}
+
+/* Video gets softer counter-invert — full invert oversaturates live footage */
+html[data-theme="light"] section[data-hero] video,
+html[data-theme="light"] video {
+  filter: invert(0.88) hue-rotate(180deg) sepia(0.12) brightness(1.0) saturate(0.85) !important;
 }
 
 html { transition: filter 0.3s ease; }
