@@ -417,8 +417,8 @@ html[data-senior="true"] button { font-size: 16px !important; padding: 12px 22px
 ───────────────────────────────────── */
 
 html[data-theme="light"] {
-  filter: invert(1) hue-rotate(180deg);
-  background: #ffffff;
+  filter: invert(0.92) hue-rotate(180deg) sepia(0.08) brightness(0.97);
+  background: #f0ece4;
 }
 
 /* Counter-invert media so they look normal */
@@ -431,7 +431,7 @@ html[data-theme="light"] canvas,
 html[data-theme="light"] [data-no-invert],
 html[data-theme="light"] [data-no-invert] *,
 html[data-theme="light"] [data-mosaic-cell] {
-  filter: invert(1) hue-rotate(180deg);
+  filter: invert(0.92) hue-rotate(180deg) sepia(0.08) brightness(0.97);
 }
 
 html { transition: filter 0.3s ease; }
