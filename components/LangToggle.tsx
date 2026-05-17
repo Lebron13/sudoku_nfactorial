@@ -7,6 +7,7 @@ export default function LangToggle() {
   return (
     <button
       data-toggle="lang"
+      data-no-invert
       onClick={() => setLang(lang === 'en' ? 'ru' : 'en')}
       title={lang === 'en' ? 'Russian' : 'English'}
       style={{

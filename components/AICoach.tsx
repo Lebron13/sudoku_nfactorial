@@ -124,6 +124,7 @@ export function AICoach({ board, solution, difficulty: _difficulty, selected }: 
       {/* ── Floating trigger ──────────────────────────────────────────── */}
       <motion.button
         data-coach="button"
+        data-no-invert
         onClick={() => setIsOpen((o) => !o)}
         whileTap={{ scale: 0.96 }}
         aria-label={isOpen ? 'Close AI Coach' : 'Open AI Coach'}
@@ -189,6 +190,7 @@ export function AICoach({ board, solution, difficulty: _difficulty, selected }: 
         {isOpen && (
           <motion.div
             data-coach="panel"
+            data-no-invert
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 16 }}

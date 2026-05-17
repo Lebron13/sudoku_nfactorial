@@ -35,7 +35,7 @@ export default function SeniorMode() {
   if (!isGamePage) return null
 
   return (
-    <button data-senior-toggle onClick={toggle} style={{
+    <button data-senior-toggle data-no-invert onClick={toggle} style={{
       position: 'fixed', top: 76, right: 16, zIndex: 70,
       padding: '8px 16px', borderRadius: 100,
       background: on ? 'rgba(255,110,180,0.15)' : 'rgba(10,10,10,0.9)',

@@ -180,7 +180,7 @@ export default function RadioPlayer() {
 
   // COLLAPSED
   if (!open) return (
-    <button data-radio="button" onClick={() => setOpen(true)} style={{
+    <button data-radio="button" data-no-invert onClick={() => setOpen(true)} style={{
       position: 'fixed', bottom: 28, left: 28, zIndex: 80,
       padding: '16px 24px', borderRadius: 100,
       background: 'rgba(12,12,12,0.95)',
@@ -226,7 +226,7 @@ export default function RadioPlayer() {
 
   // EXPANDED
   return (
-    <div data-radio="panel" style={{
+    <div data-radio="panel" data-no-invert style={{
       position: 'fixed', bottom: 28, left: 28, zIndex: 80,
       width: 320, borderRadius: 22,
       background: 'rgba(12,12,12,0.97)',
